@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Profile from './components/Profile';
+import { name, email, namesArray, Button } from './components/Profile'
+import Demo from './components/Demo';
+import PropsDemo from './components/PropsDemo';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3> This is my first React app !</h3>
+      <PropsDemo />
+      <Demo />
+      <p>Ford India </p>
+      <p>{name}</p>
+      <p>{email}</p>
+      <p>{namesArray[1]}</p>
+
+      <Profile></Profile>
+      <Profile></Profile>
+      <Profile></Profile>
+      <Profile></Profile>
+      <Button></Button>
     </div>
   );
 }
