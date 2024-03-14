@@ -32,7 +32,9 @@ function Details2(props){
     );
 }
 function Details3(props){
-    const {id,name,salary} = props.emp;
+   // props.emp = {};
+   props.emp.salary=1000; // props object contents are mutable
+   const {salary,name,id} = props.emp;
 
     return (
         <>
@@ -53,6 +55,7 @@ function PropsDemo() {
     return (
         <>
             <h3>Props Demo:</h3>
+            <Details3 emp={employees[1]} ></Details3>
             <Details name={empName} salary="35000"></Details>
             <Details2 emp={employees[0]} ></Details2>
             <Details2 emp={employees[1]} ></Details2>
