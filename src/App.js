@@ -6,12 +6,15 @@ import Demo from './components/Demo';
 import PropsDemo from './components/PropsDemo';
 import ConditionalRendering from './components/ConditionalRendering';
 import MapDemo from './components/MapDemo';
+import Products from './components/Products';
 
 function App() {
 
   return (
     <div className="App">
       <h3> This is my first React app !</h3>
+      <h3>Products demo</h3>
+      <Products />
       <h3> Map demo</h3>
       <MapDemo />
       <h3>Conditional rendering demo</h3>
