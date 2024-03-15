@@ -4,6 +4,8 @@ function DemoForm() {
 
     let [name, setName] = useState("");
     let [password, setPassword] = useState("");
+    
+
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent form reload
         console.log(name);

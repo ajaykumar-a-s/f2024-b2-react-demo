@@ -9,11 +9,13 @@ import MapDemo from './components/MapDemo';
 import Products from './components/Products';
 import EventDemo from './components/EventDemo';
 import DemoForm from './components/DemoForm';
+import Registration from './components/Registration';
 
 function App() {
 
   return (
     <div className="App">
+      <Registration />
       <DemoForm />
       <EventDemo />
       <h3> This is my first React app !</h3>
