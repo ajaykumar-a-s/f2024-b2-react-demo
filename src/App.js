@@ -1,42 +1,30 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Profile from './components/Profile';
-import { name, email, namesArray, Button } from './components/Profile'
-import Demo from './components/Demo';
-import PropsDemo from './components/PropsDemo';
-import ConditionalRendering from './components/ConditionalRendering';
-import MapDemo from './components/MapDemo';
-import Products from './components/Products';
-import EventDemo from './components/EventDemo';
-import DemoForm from './components/DemoForm';
-import Registration from './components/Registration';
+import Layout from './components/Layout';
+import Home from './components/Home';
+import NoPage from './components/NoPage';
+import AllDemo from './components/AllDemo';
 
 function App() {
 
   return (
     <div className="App">
-      <Registration />
-      <DemoForm />
-      <EventDemo />
-      <h3> This is my first React app !</h3>
-      <h3>Products demo</h3>
-      <Products />
-      <h3> Map demo</h3>
-      <MapDemo />
-      <h3>Conditional rendering demo</h3>
-      <ConditionalRendering />
-      <PropsDemo />
-      <Demo />
-      <p>Ford India </p>
-      <p>{name}</p>
-      <p>{email}</p>
-      <p>{namesArray[1]}</p>
 
-      <Profile></Profile>
-      <Profile></Profile>
-      <Profile></Profile>
-      <Profile></Profile>
-      <Button></Button>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+
+            <Route index element={<Home />}></Route>
+
+            <Route path='/demos' element={<AllDemo />}></Route>
+
+            <Route path='*' element={<NoPage />}></Route>
+          </Route>
+        </Routes>
+
+      </BrowserRouter>
+
     </div>
   );
 }

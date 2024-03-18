@@ -48,8 +48,8 @@ function Registration() {
                 </p>
                 <button type="submit" >Submit</button>
             </form>
-
-        </>
+            <p>{JSON.stringify(person)}
+                </p>        </>
     );
 
 }
