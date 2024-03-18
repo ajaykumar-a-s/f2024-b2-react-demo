@@ -14,6 +14,9 @@ export default function Layout() {
                         </li>
 
                         <li class="nav-item">
+                            <Link to='/accounts'>Accounts</Link>
+                        </li>
+                        <li class="nav-item">
                             <Link to='/demos'>Demos</Link>
                         </li>
                     </ul>
