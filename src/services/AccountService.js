@@ -12,6 +12,10 @@ class AccountService{
     addAccount(account){
         return axiosInstance.post('http://localhost:8090/account',account);
     }
+    updateAccount(account){
+        return axiosInstance.put('http://localhost:8090/account',account);
+    }
+    
 }
 
 export default new AccountService();

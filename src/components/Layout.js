@@ -10,19 +10,19 @@ export default function Layout() {
                     <ul className="navbar-nav">
 
                         <li className="nav-item">
-                            <Link to='/'>Home</Link>
+                            <Link to='/' className="nav-link">Home</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/accounts'>Accounts</Link>
+                            <Link to='/accounts' className="nav-link">Accounts</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/account'>Add Accounts</Link>
+                            <Link to='/account' className="nav-link">Add Accounts</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to='/demos'>Demos</Link>
+                            <Link to='/demos' className="nav-link">Demos</Link>
                         </li>
                     </ul>
                 </div>
