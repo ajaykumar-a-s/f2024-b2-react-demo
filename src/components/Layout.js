@@ -6,17 +6,22 @@ export default function Layout() {
         <>
             <h6> Menu </h6>
             <nav className="navbar navbar-expand-sm bg-secondary navbar-dark">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
+                <div className="container-fluid">
+                    <ul className="navbar-nav">
 
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to='/'>Home</Link>
                         </li>
 
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to='/accounts'>Accounts</Link>
                         </li>
-                        <li class="nav-item">
+
+                        <li className="nav-item">
+                            <Link to='/account'>Add Accounts</Link>
+                        </li>
+
+                        <li className="nav-item">
                             <Link to='/demos'>Demos</Link>
                         </li>
                     </ul>
